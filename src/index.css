@@ -1,0 +1,19 @@
+:root {
+  --Bg-Color-: #434a54;
+  --Bg-Card-Color-: #656d78;
+  --Color-Text-Card-: #ccd1d9;
+  --Color-: #f6f7fa;
+  --effect-Color: orange;
+  --Filter-droppdown-shadow: var(--Color-Text-Card-) 0.3rem 0.3rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--Bg-Color-);
+  color: var(--Color-);
+  letter-spacing: 0.15rem;
+}
