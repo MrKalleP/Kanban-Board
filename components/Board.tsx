@@ -3,7 +3,7 @@ import Column from './Column';
 
 const Board: React.FC = () => {
   const [columns, setColumns] = useState([
-    { id: 'todo', title: 'To Do', tasks: [{ id: '1', title: 'Learn React' }] },
+    { id: 'todo', title: 'To Do', tasks: [{ id: '1', title: '' }] },
     { id: 'doing', title: 'Doing', tasks: [] },
     { id: 'done', title: 'Done', tasks: [] },
   ]);
