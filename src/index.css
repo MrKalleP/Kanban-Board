@@ -1,10 +1,17 @@
 :root {
   --Bg-Color-: #434a54;
   --Bg-Card-Color-: #656d78;
-  --Color-Text-Card-: #ccd1d9;
+  --Bg-Header: hsl(29, 63%, 92%);
+
   --Color-: #f6f7fa;
+  --Color-Dark: #2d3239;
+
+  --Hover-white: #ccc;
   --effect-Color: orange;
+
   --Filter-droppdown-shadow: var(--Color-Text-Card-) 0.3rem 0.3rem;
+  --Borader-radius: 0.5rem;
+  --Margin-inlinge: 0.5rem;
 }
 
 html {
@@ -15,5 +22,8 @@ body {
   font-family: Arial, sans-serif;
   background-color: var(--Bg-Color-);
   color: var(--Color-);
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.12rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }

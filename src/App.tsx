@@ -1,10 +1,10 @@
-import StartPage from '../pages/startPage';
+import Board from '../components/Board';
 import './App.css';
 
 function App() {
   return (
     <>
-      <StartPage />
+      <Board />
     </>
   );
 }
