@@ -8,29 +8,30 @@ const Board: React.FC = () => {
   const [columns, setColumns] = useState<Column[]>([
     { id: 'todo', title: 'To Do', tasks: [] },
     { id: 'doing', title: 'Doing', tasks: [] },
+    { id: 'codeReview', title: 'Code review', tasks: [] },
     { id: 'done', title: 'Done', tasks: [] },
   ]);
 
   const addTask = (columnId: string, taskTitle: string) => {
-    setColumns((prev) =>
-      prev.map((col) =>
-        col.id === columnId
+    setColumns((showColums) =>
+      showColums.map((singleColumn) =>
+        singleColumn.id === columnId
           ? {
-              ...col,
+              ...singleColumn,
               tasks: [
-                ...col.tasks,
+                ...singleColumn.tasks,
                 { id: Date.now().toString(), title: taskTitle },
               ],
             }
-          : col
+          : singleColumn
       )
     );
   };
 
   return (
     <section className="colum-container">
-      {columns.map((col) => (
-        <Column key={col.id} column={col} addTask={addTask} />
+      {columns.map((singleColumn) => (
+        <Column key={singleColumn.id} column={singleColumn} addTask={addTask} />
       ))}
     </section>
   );
