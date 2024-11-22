@@ -2,8 +2,11 @@ import React, { useState } from 'react';
 import Column from './Column';
 
 const Board: React.FC = () => {
-  const [columns, setColumns] = useState([
-    { id: 'todo', title: 'To Do', tasks: [{ id: '1', title: '' }] },
+  type Task = { id: string; title: string };
+  type Column = { id: string; title: string; tasks: Task[] };
+
+  const [columns, setColumns] = useState<Column[]>([
+    { id: 'todo', title: 'To Do', tasks: [] },
     { id: 'doing', title: 'Doing', tasks: [] },
     { id: 'done', title: 'Done', tasks: [] },
   ]);
@@ -25,7 +28,7 @@ const Board: React.FC = () => {
   };
 
   return (
-    <section>
+    <section className="colum-container">
       {columns.map((col) => (
         <Column key={col.id} column={col} addTask={addTask} />
       ))}

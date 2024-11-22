@@ -19,11 +19,6 @@ const Column: React.FC<ColumnProps> = ({ column, addTask }) => {
   return (
     <section>
       <h2>{column.title}</h2>
-      <div>
-        {column.tasks.map((task) => (
-          <TaskCard key={task.id} task={task} />
-        ))}
-      </div>
       <input
         type="text"
         placeholder="New task"
@@ -31,6 +26,11 @@ const Column: React.FC<ColumnProps> = ({ column, addTask }) => {
         onChange={(e) => setTaskTitle(e.target.value)}
       />
       <button onClick={handleAddTask}>Add Task</button>
+      <div className="task-container">
+        {column.tasks.map((task) => (
+          <TaskCard key={task.id} task={task} />
+        ))}
+      </div>
     </section>
   );
 };
