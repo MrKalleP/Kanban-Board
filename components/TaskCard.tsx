@@ -6,9 +6,12 @@ type TaskProps = {
 
 const TaskCard: React.FC<TaskProps> = ({ task }) => {
   return (
-    <section className="single-task-container">
-      <h4>{task.title}</h4>
-    </section>
+    <>
+      <section className="single-task-container">
+        <h4>{task.title}</h4>
+        <section className="buttonsCard"></section>
+      </section>
+    </>
   );
 };
 

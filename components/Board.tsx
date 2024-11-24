@@ -10,6 +10,7 @@ const Board: React.FC = () => {
     { id: 'doing', title: 'Doing', tasks: [] },
     { id: 'codeReview', title: 'Code review', tasks: [] },
     { id: 'done', title: 'Done', tasks: [] },
+    { id: 'sprintTime', title: 'Sprint time', tasks: [] },
   ]);
 
   const addTask = (columnId: string, taskTitle: string) => {
