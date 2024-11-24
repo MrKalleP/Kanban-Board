@@ -84,13 +84,6 @@ button:hover {
   margin-bottom: 0.5rem;
 }
 
-.single-task-container:hover {
-  transform: scale(1.8);
-  margin-top: 3rem;
-  padding: 0;
-  position: absolute;
-}
-
 h4 {
   padding: 0.6rem;
   font-size: 1.2rem;
