@@ -9,7 +9,6 @@ const TaskCard: React.FC<TaskProps> = ({ task }) => {
     <>
       <section className="single-task-container">
         <h4>{task.title}</h4>
-        <section className="buttonsCard"></section>
       </section>
     </>
   );
